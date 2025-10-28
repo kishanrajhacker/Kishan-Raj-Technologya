@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KISHAN RAJ - Voter, PAN & Aadhaar Portal</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 70px 20px 20px;
+    }
+
+    h1 {
+      font-size: 3.8rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow: 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 80px #00eaff;
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00eaff; }
+      to { text-shadow: 0 0 35px #00eaff, 0 0 80px #00eaff; }
+    }
+
+    .profile {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 25px;
+      border: 4px solid #00eaff;
+      box-shadow: 0 0 25px #00eaff;
+      transition: transform 1s;
+    }
+
+    .profile:hover {
+      transform: rotateY(360deg) scale(1.1);
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .datetime {
+      margin-top: 15px;
+      color: #00eaff;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 0 15px;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #00eaff, #0077ff);
+      color: #fff;
+      padding: 16px 45px;
+      text-decoration: none;
+      border-radius: 40px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 238, 255, 0.5);
+    }
+
+    .btn:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 10px 30px rgba(0, 238, 255, 0.8);
+      background: linear-gradient(45deg, #0077ff, #00eaff);
+    }
+
+    .info-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
+    }
+
+    .info-box h3 {
+      color: #00eaff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .info-box ul {
+      list-style: disc;
+      margin-left: 25px;
+      color: #ddd;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      background: #111;
+      color: #aaa;
+      font-size: 1rem;
+      text-align: center;
+      box-shadow: 0 -2px 20px rgba(0,0,0,0.5);
+    }
+
+    footer span {
+      color: #00eaff;
+      font-weight: bold;
+    }
+
+    .bg-bubbles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .bg-bubbles li {
+      position: absolute;
+      list-style: none;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: rgba(0, 238, 255, 0.2);
+      bottom: -160px;
+      animation: rise 25s infinite;
+      border-radius: 50%;
+    }
+
+    @keyframes rise {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="bg-bubbles">
+    <li></li><li></li><li></li><li></li><li></li>
+    <li></li><li></li><li></li><li></li><li></li>
+  </ul>
+
+  <header>
+    <h1>KISHAN RAJ</h1>
+    <img src="https://i.ibb.co/8n5JDDLF/Snapchat-1293157921.jpg" alt="Kishan Raj Photo">
+    <
+    <p>Official Government Form Help & Information Portal</p>
+    <div class="datetime" id="datetime"></div>
+  </header>
+
+  <div class="container">
+
+    <!-- Voter ID Section -->
+    <a href="https://www.nvsp.in/forms/form6" target="_blank" class="btn">🗳️ New Voter ID (Form 6)</a>
+    <div class="info-box">
+      <h3>🗳️ Voter ID (Form 6) - नियम और जानकारी</h3>
+      <ul>
+        <li>यह फॉर्म 18 वर्ष से ऊपर के नागरिकों के लिए है।</li>
+        <li>आपका पता और पहचान पत्र सही होना जरूरी है।</li>
+        <li>आप केवल एक निर्वाचन क्षेत्र में ही आवेदन कर सकते हैं।</li>
+        <li>फॉर्म भरने के बाद OTP वेरिफिकेशन और डॉक्युमेंट अपलोड ज़रूरी है।</li>
+      </ul>
+    </div>
+
+    <!-- PAN Card Section -->
+    <a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="btn">💳 Apply for New PAN Card</a>
+    <div class="info-box">
+      <h3>💳 PAN Card - नियम और जानकारी</h3>
+      <ul>
+        <li>PAN नंबर एक व्यक्ति के लिए केवल एक बार जारी होता है।</li>
+        <li>आवेदन करते समय सही मोबाइल नंबर और ईमेल देना जरूरी है।</li>
+        <li>आधार कार्ड से लिंक करना आवश्यक है।</li>
+        <li>ऑनलाइन भुगतान के बाद फॉर्म सबमिट होता है।</li>
+      </ul>
+    </div>
+
+    <!-- Aadhaar Section -->
+    <a href="https://myaadhaar.uidai.gov.in/" target="_blank" class="btn">🧾 Aadhaar Update / Correction</a>
+    <div class="info-box">
+      <h3>🧾 Aadhaar Update - नियम और जानकारी</h3>
+      <ul>
+        <li>नाम, पता, जन्मतिथि, फोटो आदि में बदलाव के लिए यह पोर्टल है।</li>
+        <li>केवल UIDAI की आधिकारिक वेबसाइट पर ही अपडेट करें।</li>
+        <li>OTP वेरिफिकेशन और पहचान प्रमाण आवश्यक है।</li>
+        <li>गलत जानकारी देने पर आपका आधार अस्वीकार किया जा सकता है।</li>
+      </ul>
+    </div>
+
+    <!-- Bank Section -->
+    <a href="https://www.indianbank.net.in/jsp/startIB.jsp" target="_blank" class="btn">🏦 Check Bank Balance (Passbook Online)</a>
+    <div class="info-box">
+      <h3>🏦 Bank Balance Check - जानकारी</h3>
+      <ul>
+        <li>अपने बैंक की आधिकारिक वेबसाइट या ऐप से लॉगिन करें।</li>
+        <li>OTP वेरिफिकेशन और खाता नंबर आवश्यक है।</li>
+        <li>पासबुक देखने या बैलेंस जानने के लिए किसी भी थर्ड-पार्टी साइट का उपयोग न करें।</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 <span>KISHAN RAJ</span> | All Rights Reserved</p>
+    <p>🌐 Web Development by <span>KISHAN RAJ</span></p>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      const date = now.toLocaleDateString();
+      const time = now.toLocaleTimeString();
+      document.getElementById('datetime').innerHTML = `📅 ${date} | ⏰ ${time}`;
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+
+    document.querySelectorAll('.bg-bubbles li').forEach(li => {
+      li.style.left = Math.random() * 100 + "%";
+      li.style.width = li.style.height = (Math.random() * 40 + 10) + "px";
+      li.style.animationDuration = (Math.random() * 20 + 15) + "s";
+    });
+  </script>
+</body>
+</html>
